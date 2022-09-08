@@ -11,7 +11,8 @@
     >
         <img
             class="w-48 mr-6 mb-6"
-            src="{{asset('images/no-image.png')}}"
+            src="{{$listing->logo ? asset('storage/' . 
+            $listing->logo) : asset('/images/no-image.png')}}"
             alt=""
         />
         <h3 class="text-2xl mb-2">{{$listing->title}}</h3>
