@@ -6,7 +6,7 @@
         <h2 class="text-2xl font-bold uppercase mb-1">
             Edit Gig
         </h2>
-        <p class="mb-4">Edit {{$listiing->title}}</p>
+        <p class="mb-4">Edit {{$listing->title}}</p>
     </header>
     
     <form method="POST" action="/listings/{{$listing->id}}" 
@@ -164,7 +164,7 @@
             <button
                 class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
             >
-                Create Gig
+                Update Gig
             </button>
     
             <a href="/" class="text-black ml-4"> Back </a>
