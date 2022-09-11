@@ -72,7 +72,7 @@ class ListingController extends Controller
 
         $listing->update($formfields);
 
-        return back()->with('message', 'Listing created
+        return redirect('/')->with('message', 'Listing created
         successfully!');
     }
 
