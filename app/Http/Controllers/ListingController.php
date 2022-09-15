@@ -57,6 +57,10 @@ class ListingController extends Controller
     }
 
     public function update(Request $request, Listing $listing) {
+
+    if($listing->user_id != auth()->id()) {
+        abort(403, 'Unauthorized Action');
+    }
         $formfields = $request->validate([
             'title' => 'required',
             'company' => 'required',
@@ -84,7 +88,6 @@ class ListingController extends Controller
     }
 
     public function manage() {
-        return view('listings.manage', ['listings' =>
-    auth()->user()->listings()->get()]);
+        return view('listings.manage', ['listings' => auth()->user()->listings()->get()]);
     }
 }

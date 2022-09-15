@@ -56,12 +56,12 @@
         <i class="fa-solid fa-pencil"></i> Edit
     </a>
 
-    <form method="POST" action="/listings/{{$listing->id}}">
+    {{-- <form method="POST" action="/listings/{{$listing->id}}">
     @csrf
     @method('DELETE')
     <button class="text-red-500"><i class="fa-solid fa-trash"></i>
     Delete</button>
-    </form>
+    </form> --}}
 </x-card>
 </div>
 </x-layout>
