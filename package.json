@@ -1,14 +1,33 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "axios": "^0.27",
-        "laravel-vite-plugin": "^0.5.0",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14",
-        "vite": "^3.0.0"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "axios": "^0.27",
+    "laravel-vite-plugin": "^0.5.0",
+    "lodash": "^4.17.19",
+    "postcss": "^8.1.14",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.0.0"
+  },
+  "name": "getyourgig",
+  "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bode-tg/Getyourgigs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bode-tg/Getyourgigs/issues"
+  },
+  "homepage": "https://github.com/bode-tg/Getyourgigs#readme"
 }
