@@ -36,17 +36,17 @@
                 @auth
                 <li>
                    <span class="font-bold uppercase">
-                        Welcome {{auth()->user()->name}}
+                        Hi, {{auth()->user()->name}}
                    </span>
                 </li>
                 <li>
-                    <a href="/listings/manage" class="hover:text-laravel"
+                    <a href="/listings/manage" class="hover:underline"
                         ><i class="fa-solid fa-gear"></i>
                         Manage Listings</a
                     >
                 </li>
                 <li>
-                    <form class="inline" method="POST" action="/logout">
+                    <form class="inline hover:text-red-500" method="POST" action="/logout">
                         @csrf
                         <button type="submit">
                             <i class="fa-solid fa-door-closed"></i> Logout
@@ -78,7 +78,7 @@
 
         <a
             href="/listings/create"
-            class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
+            class="absolute top-1/3 right-10 bg-black text-white py-2 px-5 hover:bg-gray-700"
             >Post Job</a
         >
     </footer>
